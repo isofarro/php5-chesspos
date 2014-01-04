@@ -1,0 +1,15 @@
+
+# Ignore editing backups
+*.swp
+*~
+
+
+# Ignore temp directories
+tmp/
+vendor/
+var/log/
+
+# Ignore dynamically created boards
+etc/www/board/
+
+
