@@ -9,7 +9,11 @@ It supports FEN notation, but uses `-` instead of `/` as the rank separation cha
 
 When installed, the application listens for routes that match `/board/{FEN}.gif`, for example:
 
-    http://example.com/board/6k1-4R3-1p1r1pp1-p2p4-P2P2P1-2P5-1P6-6K1.gif
+    http://chesspos.myapps.info/board/r5k1-1pq2pp1-5n2-1QN5-6b1-2n1rNP1-3RPP2-2R3KB.gif
+
+Returns:
+
+![Reti-Alekhine, Baden-Baden 1925, after 28... Nxc3!](http://chesspos.myapps.info/board/r5k1-1pq2pp1-5n2-1QN5-6b1-2n1rNP1-3RPP2-2R3KB.gif)
 
 If an image doesn't exist, then the app dynamically creates the image of this board position, returns it and saves it at that URL, so the next time the static image is returned.
 
