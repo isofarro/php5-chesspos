@@ -5,7 +5,7 @@ namespace ChessPos;
 class BoardImage {
     protected $board;
     protected $image;
-    protected $pieceDir  = '/home/isofarro/Sites/php5-chesspos/share/pieces/default/32/';
+    protected $pieceDir  = '/share/pieces/default/32/';
     protected $pieceSize = 32;
 
     public function __construct($board) {
@@ -54,7 +54,7 @@ class BoardImage {
 
     protected function _getPieceImage($piece) {
         if (empty($this->imageCache[$piece])) {
-            $pieceImage = "{$this->pieceDir}{$piece}.gif";
+            $pieceImage = BASE_DIR . "{$this->pieceDir}{$piece}.gif";
             $image = \imagecreatefromgif($pieceImage);
             $this->imageCache[$piece] = $image;
         }
