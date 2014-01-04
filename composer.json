@@ -1,0 +1,23 @@
+{
+    "name": "isofarro/chesspos",
+    "type": "webapp",
+    "description": "ChessPos - creating images of chess positions",
+    "keywords": [],
+    "license": "GPL-3.0+",
+    "authors": [
+        {
+            "name": "Mike Davies",
+            "email": "isofarro2@gmail.com",
+            "homepage": "http://isofarro.com/"
+        }
+    ],
+    "require": {
+        "php": ">=5.3.0",
+        "mikecao/flight": "v1.1"
+    },
+    "autoload": {
+        "psr-0": {
+            "ChessPos\\": "lib/"
+        }
+    }
+}
