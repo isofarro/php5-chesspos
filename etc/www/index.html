@@ -1,0 +1,66 @@
+<!DOCTYPE html5>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>ChessPos: chess position image creator</title>
+
+		<style type="text/css">
+			body {
+				padding: 20px;
+				font: 16px/1.5 'Helvetica Neue';
+			}
+
+			blockquote {
+				border: 1px solid #999;
+				background-color: #f8f8f8;
+				padding: 10px;
+				margin: 0;
+			}
+
+			figure {
+				display: inline-block;
+				border: 1px solid #666;
+				background: #eee;
+			}
+
+			figcaption {
+				padding: 10px;
+				border-top: 1px solid #666;
+			}
+
+			footer {
+				border-top: 1px solid #ccc;
+				text-align: right;
+				padding: 0 10px;
+			}
+		</style>
+	</head>
+	<body>
+		<h1>ChessPos: Chess position image creator</h1>
+
+		<p>Creates an image of a chessboard specified by FEN. Given the FEN string:</p> 
+
+		<blockquote>
+			<samp>6k1/3q2p1/p2bp2p/3p1r2/1p1Pp3/3bQ1PP/PP1B1rB1/1N2R1RK</samp> 
+		</blockquote>
+
+		<p>and changing <code>/</code> to </code>-</code>, the URL of the image is:</p>
+
+		<blockquote>
+			<samp>http://chesspos.myapps.info/board/<b>6k1-3q2p1-p2bp2p-3p1r2-1p1Pp3-3bQ1PP-PP1B1rB1-1N2R1RK</b>.gif</samp>
+		</blockquote>
+
+		<p>Using that URL in an <code>img</code> element:</p>
+
+		<figure>
+			<img src="http://chesspos.myapps.info/board/6k1-3q2p1-p2bp2p-3p1r2-1p1Pp3-3bQ1PP-PP1B1rB1-1N2R1RK.gif" alt="" height="256" width="256">
+			<figcaption>Sämisch - Nimzowitsch, <br>Copenhagen 1923, 0-1</figcaption>
+		</figure>
+
+		<p>Fork this project <a href="http://github.com/isofarro/php5-chesspos/">on Github</a></p>
+
+		<footer>
+			<p>© 2014 <a href="http://isolani.co.uk/">isolani</a></p>
+		</footer>
+	</body>
+</html>
